@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package gbf;
+
+import "domain.proto";
+
+message RaidBossesResponse {
+
+  repeated RaidBoss raidBosses = 1;
+};
