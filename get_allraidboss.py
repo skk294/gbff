@@ -61,7 +61,7 @@ async def subscribe_boss(*args):
                 print(raidtweetresponse)
 
 
-if len(sys.argv) > 0:
+if len(sys.argv) > 1:
     asyncio.get_event_loop().run_until_complete(subscribe_boss(sys.argv[1:]))
 else:
     asyncio.get_event_loop().run_until_complete(get_allraidboss())
