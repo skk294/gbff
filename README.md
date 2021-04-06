@@ -1,4 +1,4 @@
-必须安装protobuf(不然会报错):
+先安装protobuf(不然会报错):
 
     pip install protobuf
 
