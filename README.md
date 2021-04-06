@@ -1,3 +1,7 @@
+必须安装protobuf(不然会报错):
+
+    pip install protobuf
+
 获取所有boss到allraidboss.json:
 
     python get_allraidboss.py
