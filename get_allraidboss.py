@@ -1,6 +1,7 @@
 import sys
 import json
 import asyncio
+import pyperclip
 import websockets
 import raidboss_pb2
 import raidtweet_pb2
@@ -58,6 +59,7 @@ async def subscribe_boss(*args):
                     await websocket.send(to_send)
             elif b'http' in _recv:
                 raidtweetresponse.ParseFromString(_recv[3:])
+                pyperclip.copy(raidtweetresponse.raidId)
                 print(raidtweetresponse)
 
 
